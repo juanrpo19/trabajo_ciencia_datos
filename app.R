@@ -27,12 +27,12 @@ style <- "my_css2.css"
 footer<-'<div class="row">
           <div class="col-sm-6">
             <p class="footer-links">
-              # <a href="https://www.youtube.com/watch?v=eqwu2NpbQT8">Insert the repo link.</a>
-              <a href="https://www.youtube.com/embed/kUZCrEWzXII">Insert the repo link.</a>
+        
+              <a href="https://github.com/juanrpo19/trabajo_ciencia_datos.git">Acceder al repositorio de git.</a>
             </p>
           </div>
           <div class="col-sm-6">
-            <p class="footer-company-name">Accidentalidad en medellin 2019</p>
+            <p class="footer-company-name">Accidentalidad en Medellín</p>
           </div>
         </div>'
 
