@@ -1,0 +1,45 @@
+```{r}
+
+library(shinydashboard)
+library(shiny)
+
+list_data <- list(c("AB","CD","EF","GH"))  #data
+
+ui <- dashboardPage(
+  dashboardHeader(title = "Text Mining"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("NLP Tree", tabName = "NLP")
+    )
+  ),
+
+  dashboardBody(
+    tabItems(
+      tabItem(tabName = "NLP",
+              fluidRow(
+                tabBox(width = 12,height="500",
+                       tabPanel("Sentences",
+                                uiOutput("nlp_sentences_tree")
+                       )
+                ) 
+              )  
+      )
+    )   
+  )
+)
+
+
+
+server <- function(input, output) {
+
+  v <- list()
+  for (i in 1:length(list_data[[1]])){
+    v[[i]] <- box(width = 8, list_data[[1]][i],actionButton(i,i))
+  }
+  output$nlp_sentences_tree <- renderUI(v)
+}
+
+shinyApp(ui = ui, server = server)
+
+```
+

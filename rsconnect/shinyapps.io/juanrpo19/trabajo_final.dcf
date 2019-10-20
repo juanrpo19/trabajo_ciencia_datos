@@ -1,0 +1,13 @@
+name: trabajo_final
+title: trabajo_final
+username:
+account: juanrpo19
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1352693
+bundleId: 2515711
+url: https://juanrpo19.shinyapps.io/trabajo_final/
+when: 1571528444.70558
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app - copia.R|Documento_Markdown.Rmd
